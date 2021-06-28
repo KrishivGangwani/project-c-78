@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> My Family</title>
+    </head>
+<body>
+    <h4>
+        My Family
+    </h4>
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F531424824784957212%2F&psig=AOvVaw3olih0KMzj3a9aTC98JDUI&ust=1624957386241000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNizopD8ufECFQAAAAAdAAAAABAD"style="width: 30%" id="familyimage">
+<h4 id="familyname"></h4>
+
+<button onclick="update();">Next</button>
+
+<script>
+ var images = ["https://www.kindpng.com/picc/m/343-3436008_cartoon-dad-and-son-transparent-cartoons-cartoon-dad.png","https://us.123rf.com/450wm/kinokotagawa/kinokotagawa1712/kinokotagawa171200465/91961518-mom-wearing-short-sleeve-clothes-is-pointing.jpg?ver=6","https://image.shutterstock.com/image-vector/cute-grandfather-cartoon-260nw-726215185.jpg","https://image.shutterstock.com/image-illustration/cartoon-old-woman-cane-260nw-1376524529.jpg"]; 
+ 
+ var names = ["Vikas Gangwani","Veenu Gangwani","Krishna Gangwani","Chandrakanta Gangwani"];
+
+
+ var i = 0;
+ function update()
+
+ {
+   var numbers_of_members = 5
+   if(i > numbers_of_members)
+   {
+       i = 0;
+   }
+   var updatedimage = imagess[i];
+   var updatedname = namess[i];
+   document.getElementById("images").src = updatedimage;
+   document.getElementById("names").innerHTML = updatedname;
+ }
+ 
+</script>
+</body>
+
+</html>
